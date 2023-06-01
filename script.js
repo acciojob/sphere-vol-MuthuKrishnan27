@@ -4,7 +4,7 @@ function volume_sphere(event) {
 		let volume = document.getElementById("volume");
 		let result = (4 / 3) * Math.PI * Math.pow(r, 3);
 		console.log(result);
-		volume.value = result;
+		volume.value = result.toFixed(4);
 		event.preventDefault();
 } 
 window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
